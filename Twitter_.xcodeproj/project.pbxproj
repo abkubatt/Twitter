@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0C76662293E3C740017DB9C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C76661293E3C740017DB9C /* ProfileViewController.swift */; };
 		A0D7F991293CE57700FC381F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7F990293CE57700FC381F /* AppDelegate.swift */; };
 		A0D7F993293CE57700FC381F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7F992293CE57700FC381F /* SceneDelegate.swift */; };
 		A0D7F995293CE57700FC381F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7F994293CE57700FC381F /* MainTabBarViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0C76661293E3C740017DB9C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A0D7F98D293CE57700FC381F /* Twitter_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitter_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D7F990293CE57700FC381F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D7F992293CE57700FC381F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0C76660293E3C4C0017DB9C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A0C76661293E3C740017DB9C /* ProfileViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		A0D7F984293CE57600FC381F = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +88,7 @@
 		A0D7F9A4293CE86200FC381F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0C76660293E3C4C0017DB9C /* General */,
 				A0D7F9A5293CE86E00FC381F /* Core */,
 			);
 			path = Controllers;
@@ -179,6 +190,7 @@
 				A0D7F9AC293CE8BA00FC381F /* NotificationsViewController.swift in Sources */,
 				A0D7F993293CE57700FC381F /* SceneDelegate.swift in Sources */,
 				A0D7F9A8293CE89400FC381F /* HomeViewController.swift in Sources */,
+				A0C76662293E3C740017DB9C /* ProfileViewController.swift in Sources */,
 				A0D7F9AE293CE8CF00FC381F /* DirectMessagesViewController.swift in Sources */,
 				A0D7F9B1293D01A200FC381F /* TweetTableViewCell.swift in Sources */,
 			);
