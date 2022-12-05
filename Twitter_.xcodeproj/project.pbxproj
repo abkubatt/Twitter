@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A0C76662293E3C740017DB9C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C76661293E3C740017DB9C /* ProfileViewController.swift */; };
+		A0C76664293E4C080017DB9C /* ProfileTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C76663293E4C080017DB9C /* ProfileTableViewHeader.swift */; };
 		A0D7F991293CE57700FC381F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7F990293CE57700FC381F /* AppDelegate.swift */; };
 		A0D7F993293CE57700FC381F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7F992293CE57700FC381F /* SceneDelegate.swift */; };
 		A0D7F995293CE57700FC381F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7F994293CE57700FC381F /* MainTabBarViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		A0C76661293E3C740017DB9C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A0C76663293E4C080017DB9C /* ProfileTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewHeader.swift; sourceTree = "<group>"; };
 		A0D7F98D293CE57700FC381F /* Twitter_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitter_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D7F990293CE57700FC381F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0D7F992293CE57700FC381F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A0D7F9B0293D01A200FC381F /* TweetTableViewCell.swift */,
+				A0C76663293E4C080017DB9C /* ProfileTableViewHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				A0D7F9A8293CE89400FC381F /* HomeViewController.swift in Sources */,
 				A0C76662293E3C740017DB9C /* ProfileViewController.swift in Sources */,
 				A0D7F9AE293CE8CF00FC381F /* DirectMessagesViewController.swift in Sources */,
+				A0C76664293E4C080017DB9C /* ProfileTableViewHeader.swift in Sources */,
 				A0D7F9B1293D01A200FC381F /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
