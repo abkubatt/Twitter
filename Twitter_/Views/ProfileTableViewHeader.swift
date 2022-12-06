@@ -93,9 +93,10 @@ class ProfileTableViewHeader: UIView {
         let imageView = UIImageView()
         imageView.clipsToBounds = true
         imageView.layer.masksToBounds = true
-        imageView.layer.cornerRadius = 40
+        imageView.layer.cornerRadius = 50
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(systemName: "person")
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = UIImage(named: "abkubattImage")
         imageView.backgroundColor = .systemTeal
         return imageView
         
@@ -143,8 +144,8 @@ class ProfileTableViewHeader: UIView {
         let profileAvatarImageViewConstraints = [
             profileAvatarImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             profileAvatarImageView.centerYAnchor.constraint(equalTo: profileHeaderImageView.bottomAnchor, constant: 10),
-            profileAvatarImageView.widthAnchor.constraint(equalToConstant: 80),
-            profileAvatarImageView.heightAnchor.constraint(equalToConstant: 80)
+            profileAvatarImageView.widthAnchor.constraint(equalToConstant: 100),
+            profileAvatarImageView.heightAnchor.constraint(equalToConstant: 100)
         ]
         
         let displayNameLabelConstraints = [
