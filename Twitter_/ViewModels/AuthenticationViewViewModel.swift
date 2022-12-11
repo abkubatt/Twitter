@@ -9,25 +9,26 @@ import Foundation
 import Firebase
 import Combine
 
-final class RegisterViewViewModel: ObservableObject {
+final class AuthenticationViewViewModel: ObservableObject {
     
     @Published var email: String?
     @Published var password: String?
-    @Published var isRegisterationFormValid: Bool = false
+    @Published var isAuthenticationFormValid: Bool = false
     @Published var user: User?
+    @Published var error: String?
     
     
     private var subcriptions: Set<AnyCancellable> = []
     
     
     
-    func validateRegistrationForm() {
+    func validateAuthenticationForm() {
         guard let email = email,
               let password = password else{
-            isRegisterationFormValid = false
+            isAuthenticationFormValid = false
             return
         }
-        isRegisterationFormValid = isValidEmail(email) && password.count >= 8
+        isAuthenticationFormValid = isValidEmail(email) && password.count >= 8
     }
     
     func isValidEmail(_ email: String) -> Bool{
@@ -41,7 +42,25 @@ final class RegisterViewViewModel: ObservableObject {
         guard let email = email,
               let password = password else{return}
         AuthManager.shared.registerUser(with: email, password: password)
-            .sink { _ in
+            .sink { [weak self] completion in
+                if case .failure(let error) = completion {
+                    self?.error = error.localizedDescription
+                }
+                
+            }receiveValue: { [weak self] user in
+                self?.user = user
+            }
+            .store(in: &subcriptions)
+    }
+    
+    func loginUser() {
+        guard let email = email,
+              let password = password else{return}
+        AuthManager.shared.loginUser(with: email, password: password)
+            .sink {  [weak self] completion in
+                if case .failure(let error) = completion {
+                    self?.error = error.localizedDescription
+                }
                 
             }receiveValue: { [weak self] user in
                 self?.user = user
