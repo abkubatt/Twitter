@@ -35,7 +35,7 @@ class ProfileTableViewHeader: UIView {
     private let indicator: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(red: 29.255, green: 161/255, blue: 242/255, alpha: 1)
+        view.backgroundColor = .twitterBlueColor
         return view
     }()
 
@@ -110,7 +110,6 @@ class ProfileTableViewHeader: UIView {
     var joinedDataLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Joined May 2022"
         label.textColor = .secondaryLabel
         label.font = .systemFont(ofSize: 13, weight: .regular)
         return label
