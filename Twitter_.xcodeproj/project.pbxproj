@@ -128,6 +128,17 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A0B0BB9529727EDA00FBA876 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0D7F999293CE57B00FC381F /* Assets.xcassets */,
+				A0D7F990293CE57700FC381F /* AppDelegate.swift */,
+				A0D7F992293CE57700FC381F /* SceneDelegate.swift */,
+				A0D7F99B293CE57B00FC381F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A0C26CDD29423C0800565423 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,16 +200,13 @@
 		A0D7F98F293CE57700FC381F /* Twitter_ */ = {
 			isa = PBXGroup;
 			children = (
+				A0B0BB9529727EDA00FBA876 /* Resources */,
 				A09D336E29704CBF0035E5CF /* Utils */,
 				A012F2942945DA76002B6193 /* Models */,
 				A0CA244D2944E4A000B4C76D /* Networking */,
 				A0CA244A2943370300B4C76D /* ViewModels */,
 				A0D7F9AF293D017600FC381F /* Views */,
 				A0D7F9A4293CE86200FC381F /* Controllers */,
-				A0D7F999293CE57B00FC381F /* Assets.xcassets */,
-				A0D7F990293CE57700FC381F /* AppDelegate.swift */,
-				A0D7F992293CE57700FC381F /* SceneDelegate.swift */,
-				A0D7F99B293CE57B00FC381F /* LaunchScreen.storyboard */,
 				A0D7F99E293CE57B00FC381F /* Info.plist */,
 				A0C26CC8294232B000565423 /* GoogleService-Info.plist */,
 			);
